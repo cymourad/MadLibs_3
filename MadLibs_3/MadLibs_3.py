@@ -1,3 +1,5 @@
+from random import randint
+
 # In this game, we are going to have multiple patterns to fill in
 # The modes are:
 # 1. Every-day life
@@ -5,12 +7,22 @@
 # 3. Fortnite
 # 4. Regular
 # 5. 
+# 6.
+# 7.
+# 8.
+# 9.
+# 10. Random
+# 0. end the game
+# 55. random pattern
 
 pattern = 1
 
-while int(pattern) in {1,2,3,4,5}:
+while int(pattern) in {1,2,3,4,5,6,7,8,9,10}:
 
-    pattern = input("Select pattern (1: Every-day life <---> 2: Christmas eve <---> 3: Fortnite <---> 4: regular <---> 5:) or any other number to end:")
+    pattern = input("Select a pattern \n    1: Every-day life\n    2: Christmas eve\n    3: Fortnite\n    4: regular\n    5:\n    55: Random pattern\n    0: to end:")
+
+    if int(pattern) == 55:
+        pattern = randint(1,10)
 
     if int(pattern) == 1 :
 
@@ -49,6 +61,36 @@ while int(pattern) in {1,2,3,4,5}:
         print("")
 
     elif int(pattern) == 5 :
+
+        wishlist = input("Enter a random word:")
+
+        print("")
+
+    elif int(pattern) == 6 :
+
+        wishlist = input("Enter an item from your wishlist:")
+
+        print("")
+
+    elif int(pattern) == 7 :
+
+        wishlist = input("Enter your favorite weapon:")
+
+        print("")
+
+    elif int(pattern) == 8 :
+
+        wishlist = input("Enter an adjective:")
+
+        print("")
+
+    elif int(pattern) == 9 :
+
+        wishlist = input("Enter a random word:")
+
+        print("")
+
+    elif int(pattern) == 10 :
 
         wishlist = input("Enter a random word:")
 
