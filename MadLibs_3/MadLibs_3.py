@@ -32,27 +32,45 @@ while int(pattern) in {1,2,3,4,5,6,7,8,9,10}:
         car_brand = input("Enter a car brand:")
         chocolate_brand = input("Enter a chocalate brand:")
         country_name_in_europe = input("Enter a country name in Europe:")
-        pizza_restaurant = input("Enter a pizza reataurant:")
+        pizza_restaurant = input("Enter a pizza restaurant:")
 
         print("I like " + color)
         print("This youtuber said: subscribe to " + youtuber)
         print("Let's play some videogames, " + videogame + " is the best.")
-        print("I have a " + car_brand + ", is the best!")
+        print("I have a " + car_brand + ", it's the best!")
         print("Let's buy some chocalate, " + chocolate_brand + " tastes good.")
-        print("I went to " + country_name_in_europe + " before, it is masive!")
+        print("I went to " + country_name_in_europe + " before, it is massive!")
         print("Let's go eat lunch, " + pizza_restaurant + " has a good menu")
 
     elif int(pattern) == 2 :
 
-        wishlist = input("Enter an item from your wishlist:")
+        christmas_movie = input("Enter a christmas movie:")
+        number = input("Enter a number:")
+        drink = input("Enter a drink:")
+        decoration = input("Enter a decoration:")
+        gift = input("Enter a gift:")
+        color_number = input("Enter a color or a number:")
+        size = input("Enter a size:")
 
-        print("")
+        print("I watched " + christmas_movie + number + " times")
+        print("I like to drink " + drink)
+        print("I like to put up " + decoration)
+        print("I would like to recieve a " + gift)
+        print("I like to build " + color_number + " snowmans")
+        print("I like my christmas tree to be " + size)
 
     elif int(pattern) == 3 :
 
-        wishlist = input("Enter your favorite weapon:")
+        weapon = input("Enter a weapon:")
+        mode = input("Enter a gamemode:")
+        location = input("Enter a location:")
+        vehicle = input("Enter a vehicle:")
 
-        print("")
+        print("I normaly use " + weapon)
+        print("Let's play " + mode)
+        print("-Where are we dropping? -Let's drop " + location)
+        print("I found a " + weapon)
+        print("let's get away from the storm with " + vehicle)
 
     elif int(pattern) == 4 :
 
