@@ -51,9 +51,9 @@ while int(pattern) in {1,2,3,4,5,6,7,8,9,10}:
         decoration = input("Enter a decoration:")
         gift = input("Enter a gift:")
         color_number = input("Enter a color or a number:")
-        size = input("Enter a size:")
+        size = input("Choose one: Small    Medium    Large:")
 
-        print("I watched " + christmas_movie + number + " times")
+        print("I watched " + christmas_movie + " " + number + " times")
         print("I like to drink " + drink)
         print("I like to put up " + decoration)
         print("I would like to recieve a " + gift)
@@ -87,13 +87,13 @@ while int(pattern) in {1,2,3,4,5,6,7,8,9,10}:
         plural_noun = input("Enter a plural noun:")
         noun = input("Enter a noun:")
         city = input("Enter a city's name:")
-        trasportation = input("Enter a method of transportation")
+        trasportation = input("Enter a method of transportation:")
 
         print("I like to sleep " + adjective)
         print(plural_noun + " are bad")
         print(noun + " is the best")
         print("I will hate to live in " + city)
-        print("")
+        print("I want to be a " + trasportation)
 
     # Food
     elif int(pattern) == 5 :
@@ -103,34 +103,41 @@ while int(pattern) in {1,2,3,4,5,6,7,8,9,10}:
         sauce = input("Enter a type of sauce:")
         smelliest_sauce("Enter a smelly sauce:")
         type_of_pasta("ENter a type of pasta:")
-        drink = input("Enter a drink:")
+        drink_2 = input("Enter a drink:")
 
         print("the helthiest food I eat is at " + ff_restaurant)
         print("I used to live in a can of " + canned_food)
         print("I want to dive in " + sauce + " sauce")
         print("my mom said I smell like " + smelliest_sauce + " sauce")
         print("my hair looks like " + type_of_pasta)
-        print("I wish I can shower in " + drink)
+        print("I wish I can shower in " + drink_2)
 
     # Animals
     elif int(pattern) == 6 :
 
-        sortest_animal = input("Enter a short animal:")
+        shortest_animal = input("Enter a short animal:")
         fat_animal = input("Enter a fat animal:")
         dirty_animal = input("Enter a dirty animal:")
         loud_animal = input("Enter a loud animal:")
+        slow_animal = input("Enter a slow animal:")\
+        mammal = input("Enter a mammal:")
 
-        print(sortest_animal + " is twice my size:")
+
+        print(shortest_animal + " is twice my size")
         print("I am fater than the " + fat_animal)
         print("before I showered, I looked like the " + dirty_animal)
-        print("when I sleep i snor like the " + loud_animal)
+        print("when I sleep i snore like the " + loud_animal)
+        print("when I run as fast as I can, it's slower than the " + slow_animal)
+        print("my eating maners are like the " + mammal)
 
     # Colors
     elif int(pattern) == 7 :
 
-        color_2 = input("Enter a color")
+        color_2 = input("Enter a color:")
+        light_color = input("Enter a light color:")
 
         print("I wish I am " + color_2)
+        print("the sky is " + light_color)
 
     # Sports
     elif int(pattern) == 8 :
