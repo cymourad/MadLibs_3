@@ -1,6 +1,6 @@
 from random import randint
 
-# In this game, we are going to have multiple patterns to fill in
+# In this game, we are going to have multiple patterns to fill in from random import randint
 # The modes are:
 # 1. Every-day life
 # 2. Christmas Eve
@@ -8,7 +8,7 @@ from random import randint
 # 4. Regular
 # 5. Food
 # 6. Animals
-# 7. Colros
+# 7. Colors
 # 8. Sports
 # 9. Clothes
 # 0. end the game
@@ -16,15 +16,15 @@ from random import randint
 
 pattern = 1
 
-while int(pattern) in {1,2,3,4,5,6,7,8,9,10}:
+while int(pattern) in {1,2,3,4,5,6,7,8,9}:
 
     pattern = input("Select a pattern: \n    1: Every-day life\n    2: Christmas eve\n    3: Fortnite\n    4: Regular\n    5: Food\n    6: Animals\n    7: Colors\n    8: Sports\n    9: Clothes\n    55: Random pattern\n    0: to end:")
 
     if int(pattern) == 55:
-        pattern = randint(1,10)
+        pattern = randint(1,9)
 
     # Every-day Life
-    if int(pattern) == 1 :
+    elif int(pattern) == 1 :
 
         color = input("Enter a color:")
         youtuber = input("Enter a youtuber:")
@@ -87,13 +87,13 @@ while int(pattern) in {1,2,3,4,5,6,7,8,9,10}:
         plural_noun = input("Enter a plural noun:")
         noun = input("Enter a noun:")
         city = input("Enter a city's name:")
-        trasportation = input("Enter a method of transportation:")
+        transportation = input("Enter a method of transportation:")
 
         print("I like to sleep " + adjective)
         print(plural_noun + " are bad")
         print(noun + " is the best")
         print("I will hate to live in " + city)
-        print("I want to be a " + trasportation)
+        print("I want to be a " + transportation)
 
     # Food
     elif int(pattern) == 5 :
@@ -101,56 +101,82 @@ while int(pattern) in {1,2,3,4,5,6,7,8,9,10}:
         ff_restaurant = input("Enter a fast-food reataurant:")
         canned_food = input("Enter a canned food item:")
         sauce = input("Enter a type of sauce:")
-        smelliest_sauce("Enter a smelly sauce:")
+        smelly_sauce("Enter a smelly sauce:")
         type_of_pasta("ENter a type of pasta:")
         drink_2 = input("Enter a drink:")
 
         print("the helthiest food I eat is at " + ff_restaurant)
         print("I used to live in a can of " + canned_food)
         print("I want to dive in " + sauce + " sauce")
-        print("my mom said I smell like " + smelliest_sauce + " sauce")
+        print("my mom said I smell like " + smelly_sauce + " sauce")
         print("my hair looks like " + type_of_pasta)
         print("I wish I can shower in " + drink_2)
 
     # Animals
     elif int(pattern) == 6 :
 
-        shortest_animal = input("Enter a short animal:")
+        short_animal = input("Enter a short animal:")
         fat_animal = input("Enter a fat animal:")
         dirty_animal = input("Enter a dirty animal:")
         loud_animal = input("Enter a loud animal:")
-        slow_animal = input("Enter a slow animal:")\
-        mammal = input("Enter a mammal:")
+        slow_animal = input("Enter a slow animal:")
+        carnivore = input("Enter a carnivore:")
 
-
-        print(shortest_animal + " is twice my size")
+        print(short_animal + " is twice my size")
         print("I am fater than the " + fat_animal)
         print("before I showered, I looked like the " + dirty_animal)
         print("when I sleep i snore like the " + loud_animal)
         print("when I run as fast as I can, it's slower than the " + slow_animal)
-        print("my eating maners are like the " + mammal)
+        print("I eat like the " + carnivore)
 
     # Colors
     elif int(pattern) == 7 :
 
         color_2 = input("Enter a color:")
         light_color = input("Enter a light color:")
+        guirly_color = input("Enter a guirly:")
+        cool_color = input("Enter a cool color:")
+        joyful_color = input("Enter a joyful color:")
+        color_3 = input("Enter one other color:")
 
         print("I wish I am " + color_2)
         print("the sky is " + light_color)
+        print("my favorite color is " + guirly_color)
+        print("I like spray-panting with " + cool_color)
+        print("I stare at " + joyful_color + " everyday")
+        print("in christmas time, I like to decorate my house with " + color_3)
 
     # Sports
     elif int(pattern) == 8 :
 
-        wishlist = input("Enter an adjective:")
+        running_sport = input("Enter a running sport:")
+        running_shoes = input("Enter a running shoe mark (ex.:Nike) :")
+        shooting_sport = input("Enter a shooting sport:")
+        shooting_side = input("Enter your shooting side (Left or right) :")
+        ball_sport = input("Enter a ball sport:")
+        method_shooting = input("Enter something you use to shoot a ball")
 
-        print("")
+        print("I do " + running_sport + " with " + running_shoes + " shoes")
+        print("when I play " + shooting_sport + " I use my " + shooting_side + " side")
+        print("my favorite ball sport is " + ball_sport)
+        print("I use the " + method_shooting + " to shoot the ball")
 
     # Clothes
     elif int(pattern) == 9 :
 
-        wishlist = input("Enter a random word:")
+        size_2 = input("Enter a size (Ex.: Small    Medium    Large):")
+        clothes_color =input("Enter a color:")
+        type_of_clothes = input("Enter the type of clothes: sportive or normal:")
+        accessories = input("Enter an Accessories:")
+        halloween = input("Enter a Haloween costume:")
+        seasonal = input("Enter a sesonal were:")
+        place = input("Enter a place:")
 
-        print("")
+        print("all my clothes are " + size_2)
+        print("I prefer the " + clothes_color + " because it's an artist's choice")
+        print(type_of_clothes + " clothes are very tight")
+        print("the "  + accessories + " make me look cool")
+        print("I go to " + place + " with " + halloween + " costume")
+        print("I were " + seasonal + " during summer")
 
 print("Thank you for playing!")
